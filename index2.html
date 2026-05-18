@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Santo Component | High-End Portfolio</title>
+  <meta name="description"
+    content="Santo Xavier's personal portfolio featuring modern design, parallax scrolling, and premium aesthetics.">
+  <link rel="stylesheet" href="style2.css" />
+  <!-- Google Fonts: Inter and Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;700;900&display=swap"
+    rel="stylesheet">
+  <!-- Phosphor Icons (for skills and UI) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+
+  <!-- Custom Cursor Wrapper -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <!-- Background Elements -->
+  <div class="bg-glow top-glow"></div>
+  <div class="bg-glow bottom-glow"></div>
+
+  <header class="glass-header">
+    <div class="container nav-container">
+      <h1 class="logo">Santo<span class="dot">.</span></h1>
+      <a href="#main-nav" class="nav-toggle-label" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </a>
+      <nav id="main-nav" class="main-nav" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="btn btn-glass">Contact Me</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="parallax-layer layer-1" data-speed="0.2">
+        <div class="mesh-gradient"></div>
+      </div>
+      <div class="container hero-content parallax-layer layer-2" data-speed="0.5">
+        <div class="hero-grid">
+          <div class="hero-text-col">
+            <div class="hero-badge">Welcome to my universe</div>
+            <h2 class="hero-title">I am <span class="highlight">Santo Xavier</span></h2>
+            <h1 class="hero-role"><span id="role"></span></h1>
+            <p class="hero-desc">Crafting premium, interactive, and visually stunning digital experiences that captivate
+              and engage.</p>
+            <div class="hero-btns">
+              <a href="#projects" class="btn btn-primary glow-efx">Explore My Works</a>
+              <a href="#contact" class="btn btn-outline">Let's Connect</a>
+            </div>
+          </div>
+          <div class="hero-3d-col" id="canvas-container">
+            <!-- 3D Interactive Globe will inject here -->
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="ph ph-mouse-simple"></i>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section section-about">
+      <div class="container parallax-group">
+        <div class="about-grid">
+          <div class="about-text animate-on-scroll slide-up">
+            <h2 class="section-title">Behind the Code<span class="dot">.</span></h2>
+            <p class="lead">I'm a passionate developer with an eye for detail and a heart for design.</p>
+            <p>Bridging the gap between aesthetics and functionality, I specialize in creating responsive, smooth, and
+              highly interactive user interfaces. My goal is to build digital products that not only work flawlessly but
+              leave a lasting impression.</p>
+            <div class="stats">
+              <div class="stat-item">
+                <span class="stat-num">50+</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Dedication</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual animate-on-scroll fade-in">
+            <div class="glass-card portrait-card parallax-layer" data-speed="0.1">
+              <div class="abstract-shape">
+                <i class="ph ph-code" style="font-size: 8rem; color: rgba(255,255,255,0.1)"></i>
+              </div>
+              <h3>Always Building</h3>
+              <p>Turning caffeine into lines of code and bold designs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section section-skills">
+      <div class="container relative">
+        <div class="section-header animate-on-scroll slide-up">
+          <h2 class="section-title">My Arsenal<span class="dot">.</span></h2>
+          <p class="section-subtitle">A curated stack of modern technologies and tools I use to bring ideas to life.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Skill Items -->
+          <div class="skill-item animate-on-scroll stagger-1">
+            <i class="ph-fill ph-file-html"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-2">
+            <i class="ph-fill ph-file-css"></i>
+            <span>CSS3 / SCSS</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-3">
+            <i class="ph-fill ph-file-code"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-4">
+            <i class="ph-fill ph-atom"></i>
+            <span>React.js</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-5">
+            <i class="ph-fill ph-hexagon"></i>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-6">
+            <i class="ph-fill ph-wind"></i>
+            <span>Tailwind CSS</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-7">
+            <i class="ph-fill ph-github-logo"></i>
+            <span>Git & GitHub</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-8">
+            <i class="ph-fill ph-figma-logo"></i>
+            <span>Figma / UI</span>
+          </div>
+          <div class="skill-item animate-on-scroll stagger-9">
+            <i class="ph-fill ph-terminal"></i>
+            <span>Python</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section section-projects">
+      <div class="container relative z-10">
+        <div class="section-header animate-on-scroll slide-up">
+          <h2 class="section-title">Selected Works<span class="dot">.</span></h2>
+          <p class="section-subtitle">A showcase of passion, logic, and creative problem solving.</p>
+        </div>
+
+        <div class="projects-list">
+
+          <article class="project-showcase animate-on-scroll slide-up">
+            <div class="project-img-wrapper">
+              <img src="e-commerce.png" alt="E-commerce Platform" class="project-img">
+              <div class="overlay"></div>
+            </div>
+            <div class="project-info glass-card">
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Custom CSS</span>
+              </div>
+              <h3>NextGen E-Commerce</h3>
+              <p>A high-performance modern e-commerce storefront featuring incredibly smooth animations, product
+                quick-views, and an optimized purchasing flow.</p>
+              <div class="project-links">
+                <a href="http://localhost:5173/" class="btn btn-primary" target="_blank">Live Site <i
+                    class="ph ph-arrow-up-right"></i></a>
+                <a href="#" class="btn btn-glass">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-showcase reverse animate-on-scroll slide-up">
+            <div class="project-img-wrapper">
+              <img src="Screenshot 2025-04-22 174157.png" alt="Cultural Search App" class="project-img">
+              <div class="overlay"></div>
+            </div>
+            <div class="project-info glass-card">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+              <h3>Cultural Explorer</h3>
+              <p>An immersive platform to explore and archive world heritage sites. Features interactive mapping and an
+                extensive searchable database built on Django.</p>
+              <div class="project-links">
+                <a href="#" class="btn btn-primary" target="_blank">Live Site <i class="ph ph-arrow-up-right"></i></a>
+                <a href="#" class="btn btn-glass">Source Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section section-contact">
+      <div class="container container-sm relative z-10">
+
+        <div class="contact-card glass-card animate-on-scroll slide-up">
+          <h2 class="section-title">Let's Create Together</h2>
+          <p class="contact-desc">Currently open for new opportunities. Reach out to discuss a project, ask a question,
+            or simply say hello!</p>
+
+          <form id="contactForm" class="contact-form">
+            <div class="input-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone (Optional)</label>
+              <input type="tel" id="phone" placeholder="+1 234 567 890">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="How can I help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block glow-efx" id="submitBtn">
+              <span>Send Message</span>
+              <i class="ph ph-paper-plane-tilt"></i>
+            </button>
+            <div id="statusMessage" class="status-msg"></div>
+          </form>
+
+          <div class="social-links">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=santoxavier5948@gmail.com" target="_blank"
+              aria-label="Email"><i class="ph-fill ph-envelope-simple"></i></a>
+            <a href="https://www.linkedin.com/in/santo-xavier-409971360/" target="_blank" aria-label="LinkedIn"><i
+                class="ph-fill ph-linkedin-logo"></i></a>
+            <a href="https://github.com/SAnto-spec" target="_blank" aria-label="GitHub"><i
+                class="ph-fill ph-github-logo"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; <span id="year">2026</span> Santo Xavier. Engineered with passion.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script>
+    // --- 3D Element (Three.js) initialization ---
+    const init3D = () => {
+      const container = document.getElementById('canvas-container');
+      if (!container || typeof THREE === 'undefined') return;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+      renderer.setPixelRatio(window.devicePixelRatio);
+      renderer.setSize(container.clientWidth, container.clientHeight);
+
+      const icon = container.querySelector('i');
+      if (icon) icon.style.display = 'none';
+
+      container.appendChild(renderer.domElement);
+
+      const geometry = new THREE.IcosahedronGeometry(2.4, 2);
+      const wireMaterial = new THREE.MeshBasicMaterial({
+        color: 0x8b5cf6, // Using primary purple
+        wireframe: true,
+        transparent: true,
+        opacity: 0.65
+      });
+      const mesh = new THREE.Mesh(geometry, wireMaterial);
+      scene.add(mesh);
+
+      const coreMaterial = new THREE.MeshBasicMaterial({
+        color: 0x3b82f6, // Using secondary blue
+        transparent: true,
+        opacity: 0.15
+      });
+      const coreMesh = new THREE.Mesh(geometry, coreMaterial);
+      coreMesh.scale.set(0.96, 0.96, 0.96);
+      scene.add(coreMesh);
+
+      camera.position.z = 6.5;
+
+      let targetRotX = 0;
+      let targetRotY = 0;
+
+      container.addEventListener('mousemove', (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        targetRotX = y * 0.005;
+        targetRotY = x * 0.005;
+      });
+
+      container.addEventListener('mouseleave', () => {
+        targetRotX = 0;
+        targetRotY = 0;
+      });
+
+      const animate3D = function () {
+        requestAnimationFrame(animate3D);
+        mesh.rotation.y += 0.003;
+        mesh.rotation.x += 0.002;
+        coreMesh.rotation.y += 0.003;
+        coreMesh.rotation.x += 0.002;
+
+        mesh.rotation.x += (targetRotX) * 0.1;
+        mesh.rotation.y += (targetRotY) * 0.1;
+
+        renderer.render(scene, camera);
+      };
+
+      animate3D();
+
+      window.addEventListener('resize', () => {
+        if (container.clientWidth > 0) {
+          camera.aspect = container.clientWidth / container.clientHeight;
+          camera.updateProjectionMatrix();
+          renderer.setSize(container.clientWidth, container.clientHeight);
+        }
+      });
+    };
+    init3D();
+
+    // Set Footer Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Init Typed.js
+    var typed = new Typed('#role', {
+      strings: ['UI/UX Designer.', 'Frontend Engineer.', 'Interactive Developer.', 'Digital Creator.'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      backDelay: 1500,
+      loop: true,
+      cursorChar: '<span class="cursor-blink">_</span>'
+    });
+
+    // Custom Cursor Logic
+    const dot = document.querySelector('.cursor-dot');
+    const outline = document.querySelector('.cursor-outline');
+    let cursorX = 0, cursorY = 0, outlineX = 0, outlineY = 0;
+
+    window.addEventListener('mousemove', (e) => {
+      cursorX = e.clientX;
+      cursorY = e.clientY;
+      dot.style.transform = `translate(${cursorX}px, ${cursorY}px)`;
+    });
+
+    function animateCursor() {
+      // Smooth follow for the outline
+      outlineX += (cursorX - outlineX) * 0.15;
+      outlineY += (cursorY - outlineY) * 0.15;
+      outline.style.transform = `translate(${outlineX}px, ${outlineY}px)`;
+      requestAnimationFrame(animateCursor);
+    }
+    animateCursor();
+
+    // Hover effect on links and buttons for custom cursor
+    const interactables = document.querySelectorAll('a, button, input, textarea, .skill-item');
+    interactables.forEach(el => {
+      el.addEventListener('mouseenter', () => {
+        outline.classList.add('hovering');
+        dot.classList.add('hovering');
+      });
+      el.addEventListener('mouseleave', () => {
+        outline.classList.remove('hovering');
+        dot.classList.remove('hovering');
+      });
+    });
+
+    // --- Interactive Mouse Animations ---
+
+    // 1. 3D Tilt Effect for Interactive Pictures and Cards
+    const tiltElements = document.querySelectorAll('.project-img-wrapper, .project-info, .abstract-shape, .contact-card');
+    tiltElements.forEach(el => {
+      el.addEventListener('mousemove', (e) => {
+        const rect = el.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        // Calculate rotation (-12 to 12 degrees)
+        const rotateX = ((y - centerY) / centerY) * -12;
+        const rotateY = ((x - centerX) / centerX) * 12;
+
+        el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+        el.style.transition = 'transform 0.1s ease-out';
+      });
+
+      el.addEventListener('mouseleave', () => {
+        el.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
+        el.style.transition = 'transform 0.6s ease-out';
+      });
+    });
+
+    // 2. Magnetic Buttons
+    const buttons = document.querySelectorAll('.btn, .social-links a');
+    buttons.forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+
+        // Move the button slightly towards the mouse
+        btn.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+        btn.style.transition = 'transform 0.1s ease-out';
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = `translate(0px, 0px)`;
+        btn.style.transition = 'transform 0.5s ease-out';
+      });
+    });
+
+    // 3. Mouse Parallax for Hero Background (Mesh Gradient)
+    const heroBg = document.querySelector('.mesh-gradient');
+    const heroSection = document.querySelector('.hero');
+    if (heroSection && heroBg) {
+      heroBg.style.transition = 'transform 0.2s ease-out';
+      heroSection.addEventListener('mousemove', (e) => {
+        const x = (e.clientX / window.innerWidth - 0.5) * 80;
+        const y = (e.clientY / window.innerHeight - 0.5) * 80;
+        heroBg.style.transform = `translate(calc(-50% - ${x}px), calc(-50% - ${y}px))`;
+      });
+      heroSection.addEventListener('mouseleave', () => {
+        heroBg.style.transform = `translate(-50%, -50%)`;
+      });
+    }
+
+    // Smooth Parallax Effect with requestAnimationFrame and Lerping
+    const parallaxLayers = document.querySelectorAll('.parallax-layer');
+    let targetScroll = window.scrollY;
+    let currentScroll = targetScroll;
+
+    window.addEventListener('scroll', () => {
+      targetScroll = window.scrollY;
+    });
+
+    function updateParallax() {
+      // Lerp for immediate but extremely smooth updates
+      currentScroll += (targetScroll - currentScroll) * 0.08;
+
+      parallaxLayers.forEach(layer => {
+        const speed = layer.getAttribute('data-speed');
+        const yPos = -(currentScroll * speed);
+        // translate3d forces hardware acceleration on the GPU
+        layer.style.transform = `translate3d(0, ${yPos}px, 0)`;
+      });
+
+      requestAnimationFrame(updateParallax);
+    }
+    updateParallax();
+
+    // Reveal Animations on Scroll
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
+    const observerOptions = { threshold: 0.15, rootMargin: '0px 0px -50px 0px' };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    animateElements.forEach(el => observer.observe(el));
+
+    // EmailJS Setup
+    emailjs.init({ publicKey: "MdW7jb8xyJsB8n5Xi" });
+
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const statusMessage = document.getElementById('statusMessage');
+      const btn = document.getElementById('submitBtn');
+      const btnText = btn.querySelector('span');
+
+      btnText.textContent = 'Sending...';
+      btn.style.opacity = '0.7';
+      btn.style.pointerEvents = 'none';
+
+      emailjs.send('service_mbn1u07', 'template_lheiz4q', {
+        to_email: 'santoxavier5948@gmail.com',
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        phone: document.getElementById('phone').value,
+        message: document.getElementById('message').value
+      }).then(function (response) {
+        statusMessage.textContent = 'Message sent beautifully! 🎉';
+        statusMessage.className = 'status-msg success';
+        document.getElementById('contactForm').reset();
+        restoreBtn();
+      }, function (error) {
+        statusMessage.textContent = 'Error sending message. Try again later.';
+        statusMessage.className = 'status-msg error';
+        console.error('EmailJS Error:', error);
+        restoreBtn();
+      });
+
+      function restoreBtn() {
+        btnText.textContent = 'Send Message';
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'auto';
+        setTimeout(() => { statusMessage.textContent = ''; statusMessage.className = 'status-msg'; }, 6000);
+      }
+    });
+  </script>
+</body>
+
+</html>
