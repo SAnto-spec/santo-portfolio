@@ -819,12 +819,27 @@ footer {
     background: rgba(255,255,255,0.05);
   }
   
-  .hamburger { width: 20px; height: 2px; background: white; position: relative; }
+  .hamburger { 
+    width: 20px; 
+    height: 2px; 
+    background: white; 
+    position: relative; 
+    transition: background-color 0.3s ease;
+  }
   .hamburger::before, .hamburger::after {
-    content: ''; position: absolute; width: 20px; height: 2px; background: white;
+    content: ''; 
+    position: absolute; 
+    width: 20px; 
+    height: 2px; 
+    background: white;
+    transition: transform 0.3s ease, top 0.3s ease;
   }
   .hamburger::before { top: -6px; }
   .hamburger::after { top: 6px; }
+  
+  .hamburger.active { background: transparent; }
+  .hamburger.active::before { top: 0; transform: rotate(45deg); }
+  .hamburger.active::after { top: 0; transform: rotate(-45deg); }
 
   .main-nav {
     display: none;
@@ -840,6 +855,7 @@ footer {
     box-shadow: 0 20px 40px rgba(0,0,0,0.5);
   }
   
+  .main-nav.active,
   .main-nav:target {
     display: flex;
   }

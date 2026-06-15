@@ -398,6 +398,9 @@ export default function App() {
             <a href="#about" className="nav-link" onClick={() => setMenuActive(false)}>About</a>
             <a href="#skills" className="nav-link" onClick={() => setMenuActive(false)}>Skills</a>
             <a href="#projects" className="nav-link" onClick={() => setMenuActive(false)}>Projects</a>
+            <a href="/Santo_Xavier_Resume.pdf" download="Santo_Xavier_Resume.pdf" className="btn btn-glass" onClick={() => setMenuActive(false)}>
+              <i className="ph ph-download-simple"></i> Resume
+            </a>
             <a href="#contact" className="btn btn-glass" onClick={() => setMenuActive(false)}>Contact Me</a>
           </nav>
         </div>
@@ -418,6 +421,9 @@ export default function App() {
                 <p className="hero-desc">Crafting premium, interactive, and visually stunning digital experiences that captivate and engage.</p>
                 <div className="hero-btns">
                   <a href="#projects" className="btn btn-primary glow-efx">Explore My Works</a>
+                  <a href="/Santo_Xavier_Resume.pdf" download="Santo_Xavier_Resume.pdf" className="btn btn-outline">
+                    <i className="ph ph-download-simple"></i> Download Resume
+                  </a>
                   <a href="#contact" className="btn btn-outline">Let's Connect</a>
                 </div>
               </div>
