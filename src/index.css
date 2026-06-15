@@ -252,6 +252,13 @@ button { font-family: inherit; }
   gap: 32px;
 }
 
+.main-nav .btn {
+  padding: 8px 18px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+  gap: 6px;
+}
+
 .nav-link {
   font-size: 0.95rem;
   color: var(--text-muted);
@@ -861,6 +868,12 @@ footer {
   }
 
   .nav-link { font-size: 1.1rem; }
+  
+  .main-nav .btn {
+    padding: 10px 22px;
+    font-size: 1rem;
+    width: 100%;
+  }
   
   .input-row { grid-template-columns: 1fr; gap: 20px; }
   
